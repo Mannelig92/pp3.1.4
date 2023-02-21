@@ -83,7 +83,7 @@
                         <td th:text="${user.getUserName()}">Name</td>
                         <td th:text="${user.getLastName()}">LastName</td>
                         <td th:text="${user.getAge()}">Age</td>
-                        <td th:text="${user.getEmail}">Email</td>
+                        <td th:text="${user.getEmail()}">Email</td>
                         <td th:switch="${#lists.size(user.getRoles())}">
                      <span th:case="'1'"
                            th:text="${user.getRoles().get(0).toString()}"></span>
